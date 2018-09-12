@@ -2,8 +2,8 @@
 // Created by Killian on 11/01/18.
 //
 
-#ifndef WARRIORS_TACTICS_CORE_WARRIOR_MOVE_HPP
-#define WARRIORS_TACTICS_CORE_WARRIOR_MOVE_HPP
+#ifndef WARRIORS_TACTICS_CORE_WARRIOR_MOVEDATA_HPP
+#define WARRIORS_TACTICS_CORE_WARRIOR_MOVEDATA_HPP
 
 #include <kboost/kboost.hpp>
 
@@ -17,10 +17,10 @@ namespace Core {
 namespace Warrior {
 
 
-class Move
+class MoveData
 {
 public:
-    Move(MoveId moveId) noexcept;
+    MoveData(MoveId moveId) noexcept;
     
     void print(std::ostream& os, kios::indentation& indent) const;
 

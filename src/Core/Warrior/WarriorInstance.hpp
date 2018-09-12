@@ -2,8 +2,8 @@
 // Created by Killian on 10/01/18.
 //
 
-#ifndef WARRIORS_TACTICS_CORE_WARRIOR_WARRIOR_HPP
-#define WARRIORS_TACTICS_CORE_WARRIOR_WARRIOR_HPP
+#ifndef WARRIORS_TACTICS_CORE_WARRIOR_WARRIORINSTANCE_HPP
+#define WARRIORS_TACTICS_CORE_WARRIOR_WARRIORINSTANCE_HPP
 
 #include <ostream>
 
@@ -17,10 +17,10 @@ namespace Core {
 namespace Warrior {
 
 
-class Warrior
+class WarriorInstance
 {
 public:
-    Warrior(
+    WarriorInstance(
             WarriorId warriorId,
             std::string nickname,
             std::uint32_t happiness,

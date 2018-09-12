@@ -10,8 +10,8 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin")
 
 set(SOURCE_FILES
         src/main.cpp
-        src/Core/Warrior/Warrior.cpp
-        src/Core/Warrior/Warrior.hpp
+        src/Core/Warrior/WarriorInstance.cpp
+        src/Core/Warrior/WarriorInstance.hpp
         src/Core/Warrior/Stats.cpp
         src/Core/Warrior/Stats.hpp
         src/Core/Warrior/Moves.cpp
@@ -29,8 +29,8 @@ set(SOURCE_FILES
         src/Core/Warrior/StatId.hpp
         src/Core/Warrior/Nature.cpp
         src/Core/Warrior/Nature.hpp
-        src/Core/Warrior/Move.cpp
-        src/Core/Warrior/Move.hpp
+        src/Core/Warrior/MoveData.cpp
+        src/Core/Warrior/MoveData.hpp
         src/Core/Warrior/MoveCategoryId.hpp
         src/Core/Warrior/NatureId.cpp 
         src/Core/Warrior/NatureId.hpp
@@ -41,7 +41,7 @@ set(SOURCE_FILES
         src/Core/Warrior/MoveCategoryId.cpp 
         src/Core/Warrior/GenderId.cpp 
         src/Core/Warrior/GenderId.hpp
-        )
+        src/Core/Warrior/WarriorData.cpp src/Core/Warrior/WarriorData.hpp)
 
 add_executable(WarriorsTactics ${SOURCE_FILES})
 

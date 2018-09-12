@@ -2,7 +2,7 @@
 // Created by dragonfly on 10/01/18.
 //
 
-#include "Warrior.hpp"
+#include "WarriorInstance.hpp"
 
 
 namespace WarriorsTactics {
@@ -10,7 +10,7 @@ namespace Core {
 namespace Warrior {
 
 
-Warrior::Warrior(
+WarriorInstance::WarriorInstance(
         WarriorId warriorId,
         std::string nickname,
         std::uint32_t happiness,
@@ -29,7 +29,7 @@ Warrior::Warrior(
 }
 
 
-void Warrior::print(std::ostream& os) const
+void WarriorInstance::print(std::ostream& os) const
 {
     std::ios old_os_state(nullptr);
     kios::indentation indent;

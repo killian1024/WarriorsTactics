@@ -37,6 +37,9 @@ enum class TypeId
 };
 
 
+extern const char* const typeIdStr[];
+
+
 std::ostream& operator <<(std::ostream& os, TypeId typeId);
 
 

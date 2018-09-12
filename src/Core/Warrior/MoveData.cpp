@@ -2,7 +2,7 @@
 // Created by Killian on 11/01/18.
 //
 
-#include "Move.hpp"
+#include "MoveData.hpp"
 
 
 namespace WarriorsTactics {
@@ -10,7 +10,7 @@ namespace Core {
 namespace Warrior {
 
 
-Move::Move(MoveId moveId) noexcept
+MoveData::MoveData(MoveId moveId) noexcept
         : moveId_(moveId)
         , moveCategoryId_(getOriginalMoveCategoryId())
         , type_(getOriginalType())
@@ -19,7 +19,7 @@ Move::Move(MoveId moveId) noexcept
 }
 
 
-void Move::print(std::ostream& os, kios::indentation& indent) const
+void MoveData::print(std::ostream& os, kios::indentation& indent) const
 {
     indent++;
     
@@ -32,7 +32,7 @@ void Move::print(std::ostream& os, kios::indentation& indent) const
 }
 
 
-MoveCategoryId Move::getOriginalMoveCategoryId() const noexcept
+MoveCategoryId MoveData::getOriginalMoveCategoryId() const noexcept
 {
     switch (moveId_)
     {
@@ -54,7 +54,7 @@ MoveCategoryId Move::getOriginalMoveCategoryId() const noexcept
 }
 
 
-Type Move::getOriginalType() const noexcept
+Type MoveData::getOriginalType() const noexcept
 {
     switch (moveId_)
     {
@@ -76,7 +76,7 @@ Type Move::getOriginalType() const noexcept
 }
 
 
-std::uint32_t Move::getOriginalPower() const noexcept
+std::uint32_t MoveData::getOriginalPower() const noexcept
 {
     switch (moveId_)
     {

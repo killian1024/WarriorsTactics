@@ -31,6 +31,9 @@ enum class WarriorId
 };
 
 
+extern const char* const warriorIdStr[];
+
+
 std::ostream& operator <<(std::ostream& os, WarriorId warriorId);
 
 

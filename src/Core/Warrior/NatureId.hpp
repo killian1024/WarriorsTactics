@@ -44,6 +44,9 @@ enum class NatureId
 };
 
 
+extern const char* const natureIdStr[];
+
+
 std::ostream& operator <<(std::ostream& os, NatureId typeId);
 
 
